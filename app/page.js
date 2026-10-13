@@ -2,7 +2,8 @@ import styles from "./page.module.css";
 
 const faqs = [
   {
-    question: "How can I check my GiftCardMall MyGift balance?",
+    question:
+      "How can I check my GiftCardMall MyGift balance or GiftCardMall balance?",
     answer:
       "Start with the balance-check details printed on your card or packaging. Make sure the web address matches the issuer’s instructions before entering any card information.",
   },
@@ -27,9 +28,19 @@ const faqs = [
       "It refers to the available value on a prepaid card. Purchases, refunds, and pending authorizations can affect the amount shown.",
   },
   {
-    question: "Is GiftCard an official card issuer website?",
+    question: "Where can I find GiftCardMall/MyGift Balance information?",
     answer:
-      "No. GiftCard is an independent information resource and is not affiliated with or endorsed by any card issuer.",
+      "Use the balance and support instructions printed on your card or packaging, and verify the website address before entering private details.",
+  },
+  {
+    question: "Is GiftCard an official GiftCardMall/MyGift website?",
+    answer:
+      "No. GiftCard is an independent information resource and is not affiliated with or endorsed by GiftCardMall, MyGift, or a card issuer.",
+  },
+  {
+    question: "What does GiftCardMall/MyGift refer to?",
+    answer:
+      "People use this phrase when looking for prepaid card balance, activation, or transaction guidance. The right process depends on the issuer and card program.",
   },
 ];
 
@@ -57,7 +68,7 @@ export default function Home() {
             <span className={styles.eyebrow}>
               Prepaid card learning center
             </span>
-            <h1>Prepaid gift card balance and activation guide</h1>
+            <h1>giftcardmall/mygift balance and activation guide</h1>
             <p className={styles.heroText}>
               Get clear answers about checking a balance, activating a card,
               understanding transactions, and sorting out common prepaid card
@@ -99,9 +110,9 @@ export default function Home() {
         <section className={styles.section} id="balance">
           <div className={styles.sectionHeading}>
             <span className={styles.eyebrow}>Balance information</span>
-            <h2>GiftCardMall balance guide</h2>
+            <h2>GiftCardMall/MyGift Balance guide</h2>
             <p>
-              For giftcardmall balance questions, remember that available
+              For GiftCardMall balance questions, remember that available
               value can change after purchases or other activity. The issuer’s
               instructions are the best way to find the right balance-check
               service.
