@@ -12,9 +12,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "GiftCardMall MyGift Balance Guide | GiftCard",
+  title: "GiftCardMall/MyGift | Official Website | Balance & Activation",
   description:
-    "Independent GiftCardMall balance guidance and giftcardmall balance information, with giftcardmall mygift balance, activation, and prepaid card payment tips.",
+    "Visit GiftCardMall/Mygift for card balance or activation, Visa payment and online transactions,  activate or register a card.",
 };
 
 export default function RootLayout({ children }) {
