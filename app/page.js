@@ -48,9 +48,7 @@ export default function Home() {
             </span>
             <h1>GiftCardMall &amp; MyGift card guide</h1>
             <p className={styles.heroText}>
-              Find straightforward information about checking a prepaid card
-              balance, understanding card use, and troubleshooting common
-              payment questions.
+              Searching for giftcardmall/mygift or www.giftcardmall.com/mygift? Learn how to find your card's real balance-check service, read available funds, understand transactions, and solve prepaid gift card issues.
             </p>
             <div className={styles.heroActions}>
               <a className={styles.primaryButton} href="#balance">
