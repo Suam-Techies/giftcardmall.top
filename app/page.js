@@ -2,24 +2,29 @@ import styles from "./page.module.css";
 
 const faqs = [
   {
-    question: "How do I check my card balance?",
+    question: "How can I check a GiftCardMall or MyGift card balance?",
     answer:
-      "Use the balance-check instructions printed on your card or included with its packaging. Check the web address carefully before entering card information.",
+      "Start with the balance-check details printed on your card or packaging. Make sure the web address matches the issuer’s instructions before entering any card information.",
   },
   {
-    question: "Why can my available balance change?",
+    question: "Does a prepaid card need to be activated?",
     answer:
-      "Purchases, pending authorizations, refunds, and other adjustments can affect the amount currently available on a prepaid card.",
+      "It depends on the card. Some are activated when purchased, while others require an extra step. Check the receipt and card materials for the correct process.",
   },
   {
-    question: "Why might an online purchase be declined?",
+    question: "Why might a prepaid card payment be declined?",
     answer:
-      "The card may need activation, the available balance may not cover the total, or the merchant or transaction type may not be supported. Check your card instructions for details.",
+      "A payment can fail if the card is not activated, the available balance is too low, or the merchant or transaction type is not supported. Review the card instructions and contact the issuer if you still need help.",
   },
   {
-    question: "Is GiftBalance an official GiftCardMall or MyGift website?",
+    question: "Can I use a prepaid Visa card for any online purchase?",
     answer:
-      "No. GiftBalance is an independent information site and is not affiliated with or endorsed by GiftCardMall, MyGift, or a card issuer.",
+      "Not always. Online use depends on the card’s terms, the merchant’s payment rules, and the available balance. Some cards restrict certain transaction types.",
+  },
+  {
+    question: "Is GiftActive an official GiftCardMall or MyGift website?",
+    answer:
+      "No. GiftActive is an independent information resource and is not affiliated with or endorsed by GiftCardMall, MyGift, or a card issuer.",
   },
 ];
 
@@ -27,14 +32,15 @@ export default function Home() {
   return (
     <div className={styles.page} id="top">
       <header className={styles.header}>
-        <a className={styles.brand} href="#top" aria-label="GiftBalance home">
+        <a className={styles.brand} href="#top" aria-label="GiftActive home">
           <span className={styles.brandMark} aria-hidden="true">
             G
           </span>
-          <span>GiftBalance</span>
+          <span>GiftActive</span>
         </a>
         <nav className={styles.nav} aria-label="Main navigation">
           <a href="#balance">Balance guide</a>
+          <a href="#activation">Activation</a>
           <a href="#using-your-card">Using your card</a>
           <a href="#faq">FAQ</a>
         </nav>
@@ -44,15 +50,17 @@ export default function Home() {
         <section className={styles.hero}>
           <div className={styles.heroCopy}>
             <span className={styles.eyebrow}>
-              Independent prepaid card information
+              Prepaid card learning center
             </span>
-            <h1>GiftCardMall &amp; MyGift card guide</h1>
+            <h1>Your guide to GiftCardMall and MyGift cards</h1>
             <p className={styles.heroText}>
-              Searching for giftcardmall/mygift or www.giftcardmall.com/mygift? Learn how to find your card's real balance-check service, read available funds, understand transactions, and solve prepaid gift card issues.
+              Get clear answers about checking a balance, activating a card,
+              understanding transactions, and sorting out common prepaid card
+              problems.
             </p>
             <div className={styles.heroActions}>
               <a className={styles.primaryButton} href="#balance">
-                Read the balance guide <span aria-hidden="true">→</span>
+                Check the balance guide <span aria-hidden="true">→</span>
               </a>
               <a className={styles.textLink} href="#faq">
                 Browse common questions
@@ -63,11 +71,11 @@ export default function Home() {
             <div className={styles.cardIcon} aria-hidden="true">
               ✓
             </div>
-            <span className={styles.cardLabel}>A safe place to start</span>
-            <h2>Check your card’s own instructions first.</h2>
+            <span className={styles.cardLabel}>A helpful first step</span>
+            <h2>Start with the information that came with your card.</h2>
             <p>
-              Your card, packaging, or issuer-provided materials identify the
-              right way to manage that particular card.
+              The card, its packaging, or the issuer’s documentation can point
+              you to the right balance and activation process.
             </p>
           </aside>
         </section>
@@ -77,20 +85,20 @@ export default function Home() {
             !
           </span>
           <p>
-            <strong>Protect your card details.</strong> This is an informational
-            website. Never enter or share your full card number, PIN, or
-            security code here.
+            <strong>Keep your card details private.</strong> GiftActive is an
+            independent guide, not a card servicing page. Never share your full
+            card number, PIN, or security code here.
           </p>
         </aside>
 
         <section className={styles.section} id="balance">
           <div className={styles.sectionHeading}>
             <span className={styles.eyebrow}>Balance information</span>
-            <h2>How to check your gift card balance</h2>
+            <h2>Checking a GiftCardMall or MyGift balance</h2>
             <p>
-              The balance-check process depends on the card program. Follow the
-              directions supplied with your card and verify the destination
-              before entering any private information.
+              Your card’s available value may differ from its starting amount
+              after purchases or other activity. The issuer’s instructions are
+              the best way to find the applicable balance-check service.
             </p>
           </div>
           <div className={styles.steps}>
@@ -98,24 +106,68 @@ export default function Home() {
               <span className={styles.stepNumber}>01</span>
               <h3>Find the instructions</h3>
               <p>
-                Look on the back of the card or its packaging for the issuer’s
-                balance-check details.
+                Review the card, packaging, or purchase materials for balance
+                instructions and support details.
               </p>
             </article>
             <article className={styles.step}>
               <span className={styles.stepNumber}>02</span>
               <h3>Check the web address</h3>
               <p>
-                Carefully compare the address with the information provided
-                for your card. Avoid unfamiliar links and ads.
+                Compare the address with the details supplied for your card.
+                Don’t assume a search result or ad is the right destination.
               </p>
             </article>
             <article className={styles.step}>
               <span className={styles.stepNumber}>03</span>
               <h3>Review recent activity</h3>
               <p>
-                Purchases, refunds, and pending authorizations may change the
-                amount currently available.
+                Purchases, refunds, and temporary authorizations can change the
+                available amount or when it updates.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section className={styles.section} id="activation">
+          <div className={styles.sectionHeading}>
+            <span className={styles.eyebrow}>Activation basics</span>
+            <h2>Does your prepaid card need activation?</h2>
+            <p>
+              Activation rules are different for each card program. Some cards
+              are ready to use after purchase; others need an additional step
+              from the cardholder.
+            </p>
+          </div>
+          <div className={styles.infoGrid}>
+            <article className={styles.infoCard}>
+              <span className={styles.infoIcon} aria-hidden="true">
+                1
+              </span>
+              <h3>Check the receipt and packaging</h3>
+              <p>
+                Look for a note about whether the card was activated at
+                purchase or needs further setup.
+              </p>
+            </article>
+            <article className={styles.infoCard}>
+              <span className={styles.infoIcon} aria-hidden="true">
+                2
+              </span>
+              <h3>Follow the card’s directions</h3>
+              <p>
+                Use the activation method described in the original materials.
+                Avoid entering card details on unrelated websites.
+              </p>
+            </article>
+            <article className={styles.infoCard}>
+              <span className={styles.infoIcon} aria-hidden="true">
+                3
+              </span>
+              <h3>Ask the issuer if needed</h3>
+              <p>
+                If the card still does not work, contact the support provider
+                listed with the card and keep your receipt if available.
               </p>
             </article>
           </div>
@@ -126,8 +178,9 @@ export default function Home() {
             <span className={styles.eyebrow}>Card basics</span>
             <h2>Using a prepaid gift card</h2>
             <p>
-              Whether a payment works depends on the card’s terms, the
-              merchant, and the funds available for the transaction.
+              A Visa logo does not guarantee acceptance for every purchase.
+              Check the card terms, the merchant’s requirements, and your
+              available balance.
             </p>
           </div>
           <div className={styles.infoGrid}>
@@ -137,8 +190,8 @@ export default function Home() {
               </span>
               <h3>Merchant acceptance</h3>
               <p>
-                Confirm that the merchant accepts the card network and the
-                type of purchase you’re making.
+                Check that the merchant takes your card network and allows
+                prepaid cards for that purchase.
               </p>
             </article>
             <article className={styles.infoCard}>
@@ -147,8 +200,8 @@ export default function Home() {
               </span>
               <h3>Available funds</h3>
               <p>
-                Make sure the available balance covers the full transaction
-                amount, including any applicable authorization.
+                Confirm there are enough available funds for the total and any
+                temporary authorization.
               </p>
             </article>
             <article className={styles.infoCard}>
@@ -157,8 +210,8 @@ export default function Home() {
               </span>
               <h3>Card restrictions</h3>
               <p>
-                Some cards limit online, international, recurring, or other
-                transaction types. Check the card terms.
+                Online, international, or recurring payments may not be allowed
+                on every prepaid card. Review its terms first.
               </p>
             </article>
           </div>
@@ -169,17 +222,17 @@ export default function Home() {
             <span className={styles.eyebrow}>Payment help</span>
             <h2>Was your card declined?</h2>
             <p>
-              A declined transaction doesn’t always mean the card has no value.
-              Check the balance, activation status, payment details, and the
-              card’s terms. If the issue continues, contact the issuer using
-              the information provided with your card.
+              A rejected payment can have more than one cause. Check the
+              available balance, activation status, and payment details, then
+              review any card or transaction restrictions. If it still fails,
+              contact the issuer using the details supplied with your card.
             </p>
           </div>
           <ul className={styles.checklist}>
-            <li>Confirm the card is activated, if required.</li>
-            <li>Check the balance and recent transactions.</li>
-            <li>Verify the merchant accepts your card.</li>
-            <li>Review your card’s instructions and restrictions.</li>
+            <li>See whether activation is required and has been completed.</li>
+            <li>Review the balance, pending payments, and recent activity.</li>
+            <li>Check that the merchant accepts this card type.</li>
+            <li>Use the issuer’s contact details if the problem continues.</li>
           </ul>
         </section>
 
@@ -187,7 +240,10 @@ export default function Home() {
           <div className={styles.sectionHeading}>
             <span className={styles.eyebrow}>Quick answers</span>
             <h2>Frequently asked questions</h2>
-            <p>Helpful starting points for common GiftCardMall and MyGift searches.</p>
+            <p>
+              Quick guidance on balances, activation, card use, and keeping
+              your details safe.
+            </p>
           </div>
           <div className={styles.faqList}>
             {faqs.map(({ question, answer }) => (
@@ -200,13 +256,13 @@ export default function Home() {
         </section>
 
         <section className={styles.disclaimer}>
-          <h2>About this guide</h2>
+          <h2>About GiftActive</h2>
           <p>
-            GiftBalance is an independent informational website. It is not
+            GiftActive is an independent informational resource. It is not
             affiliated with or endorsed by GiftCardMall, MyGift, Blackhawk
             Network, Visa, Mastercard, American Express, any bank, retailer, or
-            gift card issuer. Card programs and servicing steps may vary;
-            always follow the instructions provided with your specific card.
+            card issuer. Terms and procedures vary by card; follow the
+            instructions supplied with yours.
           </p>
         </section>
       </main>
@@ -216,10 +272,10 @@ export default function Home() {
           <span className={styles.brandMark} aria-hidden="true">
             G
           </span>
-          <span>GiftBalance</span>
+          <span>GiftActive</span>
         </a>
-        <p>Independent prepaid gift card information.</p>
-        <span>© 2026 GiftBalance</span>
+        <p>Independent prepaid card information.</p>
+        <span>© 2026 GiftActive</span>
       </footer>
     </div>
   );
