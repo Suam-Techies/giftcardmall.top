@@ -2,7 +2,7 @@ import styles from "./page.module.css";
 
 const faqs = [
   {
-    question: "How can I check a GiftCardMall or MyGift card balance?",
+    question: "How can I check my GiftCardMall MyGift balance?",
     answer:
       "Start with the balance-check details printed on your card or packaging. Make sure the web address matches the issuer’s instructions before entering any card information.",
   },
@@ -22,9 +22,14 @@ const faqs = [
       "Not always. Online use depends on the card’s terms, the merchant’s payment rules, and the available balance. Some cards restrict certain transaction types.",
   },
   {
-    question: "Is GiftCard an official GiftCardMall or MyGift website?",
+    question: "What does giftcardmall mygift balance mean?",
     answer:
-      "No. GiftCard is an independent information resource and is not affiliated with or endorsed by GiftCardMall, MyGift, or a card issuer.",
+      "It refers to the available value on a prepaid card. Purchases, refunds, and pending authorizations can affect the amount shown.",
+  },
+  {
+    question: "Is GiftCard an official card issuer website?",
+    answer:
+      "No. GiftCard is an independent information resource and is not affiliated with or endorsed by any card issuer.",
   },
 ];
 
@@ -52,7 +57,7 @@ export default function Home() {
             <span className={styles.eyebrow}>
               Prepaid card learning center
             </span>
-            <h1>Your guide to GiftCardMall and MyGift cards</h1>
+            <h1>Prepaid gift card balance and activation guide</h1>
             <p className={styles.heroText}>
               Get clear answers about checking a balance, activating a card,
               understanding transactions, and sorting out common prepaid card
@@ -94,11 +99,12 @@ export default function Home() {
         <section className={styles.section} id="balance">
           <div className={styles.sectionHeading}>
             <span className={styles.eyebrow}>Balance information</span>
-            <h2>Checking a GiftCardMall or MyGift balance</h2>
+            <h2>GiftCardMall balance guide</h2>
             <p>
-              Your card’s available value may differ from its starting amount
-              after purchases or other activity. The issuer’s instructions are
-              the best way to find the applicable balance-check service.
+              For giftcardmall balance questions, remember that available
+              value can change after purchases or other activity. The issuer’s
+              instructions are the best way to find the right balance-check
+              service.
             </p>
           </div>
           <div className={styles.steps}>
@@ -132,7 +138,7 @@ export default function Home() {
         <section className={styles.section} id="activation">
           <div className={styles.sectionHeading}>
             <span className={styles.eyebrow}>Activation basics</span>
-            <h2>Does your prepaid card need activation?</h2>
+            <h2>Activating a prepaid gift card</h2>
             <p>
               Activation rules are different for each card program. Some cards
               are ready to use after purchase; others need an additional step
@@ -259,10 +265,10 @@ export default function Home() {
           <h2>About GiftCard</h2>
           <p>
             GiftCard is an independent informational resource. It is not
-            affiliated with or endorsed by GiftCardMall, MyGift, Blackhawk
-            Network, Visa, Mastercard, American Express, any bank, retailer, or
-            card issuer. Terms and procedures vary by card; follow the
-            instructions supplied with yours.
+            affiliated with or endorsed by the named card brands, payment
+            networks, financial institutions, retailers, or issuers. Terms and
+            procedures vary by card; follow the instructions supplied with
+            yours.
           </p>
         </section>
       </main>
