@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "GiftCardMall & MyGift Card Guide | GiftActive",
+  title: "GiftCardMall & MyGift Card Guide | GiftCard",
   description:
     "Independent guidance on checking prepaid card balances, activation, card use, and common GiftCardMall and MyGift questions.",
 };

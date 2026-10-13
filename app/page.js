@@ -22,9 +22,9 @@ const faqs = [
       "Not always. Online use depends on the card’s terms, the merchant’s payment rules, and the available balance. Some cards restrict certain transaction types.",
   },
   {
-    question: "Is GiftActive an official GiftCardMall or MyGift website?",
+    question: "Is GiftCard an official GiftCardMall or MyGift website?",
     answer:
-      "No. GiftActive is an independent information resource and is not affiliated with or endorsed by GiftCardMall, MyGift, or a card issuer.",
+      "No. GiftCard is an independent information resource and is not affiliated with or endorsed by GiftCardMall, MyGift, or a card issuer.",
   },
 ];
 
@@ -32,11 +32,11 @@ export default function Home() {
   return (
     <div className={styles.page} id="top">
       <header className={styles.header}>
-        <a className={styles.brand} href="#top" aria-label="GiftActive home">
+        <a className={styles.brand} href="#top" aria-label="GiftCard home">
           <span className={styles.brandMark} aria-hidden="true">
             G
           </span>
-          <span>GiftActive</span>
+          <span>GiftCard</span>
         </a>
         <nav className={styles.nav} aria-label="Main navigation">
           <a href="#balance">Balance guide</a>
@@ -85,7 +85,7 @@ export default function Home() {
             !
           </span>
           <p>
-            <strong>Keep your card details private.</strong> GiftActive is an
+            <strong>Keep your card details private.</strong> GiftCard is an
             independent guide, not a card servicing page. Never share your full
             card number, PIN, or security code here.
           </p>
@@ -256,9 +256,9 @@ export default function Home() {
         </section>
 
         <section className={styles.disclaimer}>
-          <h2>About GiftActive</h2>
+          <h2>About GiftCard</h2>
           <p>
-            GiftActive is an independent informational resource. It is not
+            GiftCard is an independent informational resource. It is not
             affiliated with or endorsed by GiftCardMall, MyGift, Blackhawk
             Network, Visa, Mastercard, American Express, any bank, retailer, or
             card issuer. Terms and procedures vary by card; follow the
@@ -272,10 +272,10 @@ export default function Home() {
           <span className={styles.brandMark} aria-hidden="true">
             G
           </span>
-          <span>GiftActive</span>
+          <span>GiftCard</span>
         </a>
         <p>Independent prepaid card information.</p>
-        <span>© 2026 GiftActive</span>
+        <span>© 2026 GiftCard</span>
       </footer>
     </div>
   );
