@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "GiftCardMall/MyGift Balance Guide | GiftCard",
+  title: "GiftCardMall/MyGift Balance Guide | GiftCardMall/MyGift",
   description:
     "Independent information about giftcardmall/mygift balance checks, giftcardmall balance questions, GiftCardMall MyGift cards, and activation.",
 };
